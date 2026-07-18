@@ -1,0 +1,96 @@
+
+
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.expense-list {
+  width: 500px;
+  margin: 30px auto;
+}
+
+.expense-list h2 {
+  margin-bottom: 15px;
+}
+
+.expense-list button {
+  margin-bottom: 15px;
+}
+
+.expense-form {
+  width: 500px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.expense-item {
+  width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.filter-box,
+.total-box {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.filter-box select {
+  width: 100%;
+}
+
+.total-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}.expense-list {
+  width: 500px;
+  margin: 30px auto;
+}
+
+.expense-list h2 {
+  margin-bottom: 15px;
+}
+
+.expense-list button {
+  margin-bottom: 15px;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  margin-top: 20px;
+}
