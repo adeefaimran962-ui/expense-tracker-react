@@ -1,7 +1,8 @@
 function Header() {
   return (
-    <header>
-      <h1>Expense Tracker</h1>
+    <header className="header">
+      <h1>💰 Expense Tracker</h1>
+      <p>Manage your daily expenses efficiently</p>
     </header>
   );
 }

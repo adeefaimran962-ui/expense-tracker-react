@@ -1,96 +1,111 @@
-
-
-body {
-  background: #f4f4f4;
-  font-family: Arial, sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-header {
-  background: #2563eb;
-  color: white;
-  text-align: center;
-  padding: 20px;
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#eef2f7;
 }
 
-.expense-list {
-  width: 500px;
-  margin: 30px auto;
+.header{
+  background:linear-gradient(135deg,#2563eb,#1d4ed8);
+  color:white;
+  text-align:center;
+  padding:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
-.expense-list h2 {
-  margin-bottom: 15px;
+.header p{
+  margin-top:8px;
+  opacity:.9;
 }
 
-.expense-list button {
-  margin-bottom: 15px;
+.expense-form,
+.expense-list,
+.filter-box,
+.total-box{
+  width:550px;
+  margin:25px auto;
+  background:white;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.expense-form {
-  width: 500px;
-  margin: 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
 }
 
 input,
-select,
-button {
-  padding: 10px;
-  font-size: 16px;
+select{
+  padding:12px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:15px;
 }
 
-button {
-  background: #2563eb;
-  color: white;
-  border: none;
-  cursor: pointer;
+input:focus,
+select:focus{
+  outline:none;
+  border-color:#2563eb;
 }
 
-.expense-item {
-  width: 500px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-.filter-box,
-.total-box {
-  width: 500px;
-  margin: 20px auto;
+button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.3s;
 }
 
-.filter-box select {
-  width: 100%;
+button:hover{
+  background:#1d4ed8;
 }
 
-.total-box {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-}.expense-list {
-  width: 500px;
-  margin: 30px auto;
+.total-box{
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+  color:#2563eb;
 }
 
-.expense-list h2 {
-  margin-bottom: 15px;
+.expense-item{
+  border-left:5px solid #2563eb;
+  background:#f9fafb;
+  padding:18px;
+  margin-top:15px;
+  border-radius:10px;
 }
 
-.expense-list button {
-  margin-bottom: 15px;
+.expense-item h3{
+  margin-bottom:10px;
 }
 
-.empty-message {
-  text-align: center;
-  font-size: 18px;
-  color: gray;
-  margin-top: 20px;
+.expense-item p{
+  margin:5px 0;
+}
+
+.expense-item button{
+  margin-top:10px;
+  background:#dc2626;
+}
+
+.expense-item button:hover{
+  background:#b91c1c;
+}
+
+.empty-message{
+  text-align:center;
+  color:gray;
+  padding:20px;
+}
+
+.filter-box select{
+  width:100%;
 }
